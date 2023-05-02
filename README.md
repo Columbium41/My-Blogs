@@ -1,8 +1,20 @@
-# README
+# Scheduled Tweets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
+- [About](#About)
+- [What I Learned](#What-I-Learned)
+- [Installation](#Installation)
 
+## About
+Scheduled Tweets is a tutorial series by [GoRails](https://gorails.com/) intended to help developers learn [Ruby on Rails](https://guides.rubyonrails.org/). This repository was created for the purpose of learning Ruby on Rails by following the tutorial and making minor adjustments. 
+
+## What I Learned
+TODO: Add section
+
+
+## Installation
+TODO: Add installation steps
+<!--
 Things you may want to cover:
 
 * Ruby version
@@ -22,3 +34,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+-->

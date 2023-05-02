@@ -1,0 +1,21 @@
+.navbar {
+    background: rgb(230, 230, 230);
+    padding: 1.5ch 0;
+    font-size: 1.2rem;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-self: center;
+    justify-content: center;
+    gap: 80px;
+}
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.4s;
+}
+.nav-link:hover {
+    color: rgb(0, 80, 184);
+}

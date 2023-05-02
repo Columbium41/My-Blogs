@@ -14,6 +14,8 @@ Scheduled Tweets is a tutorial series by [GoRails](https://gorails.com/) intende
 - Integrating shared HTML templates in ERB
 - Using URL Helpers/link_to with routes
 - Basics of Rails flash messages
+- Basics of creating models using the Rails console
+- Basics of validating data
 
 ## Installation
 TODO: Add installation steps

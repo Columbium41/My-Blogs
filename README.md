@@ -9,8 +9,11 @@
 Scheduled Tweets is a tutorial series by [GoRails](https://gorails.com/) intended to help developers learn [Ruby on Rails](https://guides.rubyonrails.org/). This repository was created for the purpose of learning Ruby on Rails by following the tutorial and making minor adjustments. 
 
 ## What I Learned
-TODO: Add section
-
+- Basics of the MVC model
+- Basics of routing URLs to specific files
+- Integrating shared HTML templates in ERB
+- Using URL Helpers/link_to with routes
+- Basics of Rails flash messages
 
 ## Installation
 TODO: Add installation steps

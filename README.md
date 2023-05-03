@@ -17,6 +17,9 @@ Scheduled Tweets is a tutorial series by [GoRails](https://gorails.com/) intende
 - Basics of creating models using the Rails console
 - Basics of validating data
 - Basics of creating forms with Rails
+- Basics of sign-in/sign-out controllers
+- How to use session cookies to retrieve prevous login sessions
+- Handling form errors
 
 ## Installation
 TODO: Add installation steps

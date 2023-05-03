@@ -2,14 +2,17 @@
     background: rgb(230, 230, 230);
     padding: 1.5ch 0;
     font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .nav-links {
     display: flex;
     flex-direction: row;
     list-style: none;
-    align-self: center;
+    align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
 }
 .nav-link {
     text-decoration: none;
@@ -18,4 +21,15 @@
 }
 .nav-link:hover {
     color: rgb(0, 80, 184);
+}
+
+.logout-button {
+    font-size: inherit;
+    padding: 0.8ch 1.2ch;
+    background: #ed1111;
+    border: none;
+    border-radius: 5px;
+}
+.logout-button:hover {
+    cursor: pointer;
 }

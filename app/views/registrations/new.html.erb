@@ -1,23 +1,27 @@
 <div class="sign-up-container">
-    <h1 class="text-center">Sign Up</h1>
+    <% if !Current.user %>
+        <h1 class="text-center">Sign Up</h1>
 
-    <%= form_with model: @user, url: sign_up_path, class: "account_form" do |form| %>
-        <div class="form-section">
-            <%= form.label :email, "Email:" %>
-            <%= form.text_field :email, placeholder: "johndoe@example.com" %>
-        </div>
+        <%= form_with model: @user, url: sign_up_path, class: "account_form" do |form| %>
+            <div class="form-section">
+                <%= form.label :email, "Email:" %>
+                <%= form.text_field :email, placeholder: "johndoe@example.com" %>
+            </div>
 
-        <div class="form-section">
-            <%= form.label :password, "Password:" %>
-            <%= form.password_field :password, placeholder: "password" %>
-        </div> 
-        
+            <div class="form-section">
+                <%= form.label :password, "Password:" %>
+                <%= form.password_field :password, placeholder: "password" %>
+            </div> 
+            
 
-        <div class="form-section">
-            <%= form.label :password_confirmation, "Confirm Password:" %>
-            <%= form.password_field :password_confirmation, placeholder: "password" %>
-        </div>
+            <div class="form-section">
+                <%= form.label :password_confirmation, "Confirm Password:" %>
+                <%= form.password_field :password_confirmation, placeholder: "password" %>
+            </div>
 
-        <%= form.submit "Sign Up", class: "sign-up-button" %>
+            <%= form.submit "Sign Up", class: "sign-up-button" %>
+        <% end %>
+    <% else %>
+        <h1 class="text-center">You are already signed in!</h1>
     <% end %>
 </div>

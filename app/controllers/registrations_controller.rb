@@ -9,7 +9,10 @@ class RegistrationsController < ApplicationController
 
         # Check if the user was successfully saved to the database or not
         if @user.save
+            # sign in the user using session cookies
+            session[:user_id] = @user.id
             redirect_to root_path, notice: "Successfully created account"
+
         else
             error_msg = "Sign Up Failed"
 

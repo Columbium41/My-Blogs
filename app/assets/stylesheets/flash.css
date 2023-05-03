@@ -1,8 +1,7 @@
 .flash-container {
     padding: 2ch 0;
-    width: 60%;
+    width: 30%;
     margin: 2ch auto;
-    font-size: 1.1rem;
     border-radius: 8px;
 }
 .flash-success {

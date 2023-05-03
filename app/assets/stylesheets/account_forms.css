@@ -1,11 +1,11 @@
-#sign_up_form {
+.account_form {
     font-size: 1.1rem;
     margin: 4ch auto;
     width: 40%;
     min-width: 325px;
 }
 
-#sign_up_form input:not(input[type="submit"]) {
+.account_form input:not(input[type="submit"]) {
     display: block;
     margin-top: 0.3ch;
     font-size: inherit;
@@ -16,7 +16,7 @@
     border-radius: 5px;
 }
 
-#sign_up_form input:not(input[type="submit"]):focus {
+.account_form input:not(input[type="submit"]):focus {
     outline: 2px solid #a8d8ff;
 }
 
@@ -24,7 +24,8 @@
     margin-bottom: 2ch;
 }
 
-.sign-up-button {
+.sign-up-button,
+.sign-in-button {
     display: block;
     margin: 0 auto;
     width: unset;
@@ -37,7 +38,8 @@
     transition: filter 0.3s;
 }
 
-.sign-up-button:hover {
+.sign-up-button:hover,
+.sign-in-button:hover {
     cursor: pointer;
     filter: brightness(85%);
 }

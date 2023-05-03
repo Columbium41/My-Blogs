@@ -16,6 +16,7 @@ Scheduled Tweets is a tutorial series by [GoRails](https://gorails.com/) intende
 - Basics of Rails flash messages
 - Basics of creating models using the Rails console
 - Basics of validating data
+- Basics of creating forms with Rails
 
 ## Installation
 TODO: Add installation steps

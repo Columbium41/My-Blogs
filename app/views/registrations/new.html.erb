@@ -1,0 +1,23 @@
+<div class="sign-up-container">
+    <h1 class="text-center">Sign Up</h1>
+
+    <%= form_with model: @user, url: sign_up_path, id: "sign_up_form" do |form| %>
+        <div class="form-section">
+            <%= form.label :email, "Email:" %>
+            <%= form.text_field :email, placeholder: "johndoe@example.com" %>
+        </div>
+
+        <div class="form-section">
+            <%= form.label :password, "Password:" %>
+            <%= form.password_field :password, placeholder: "password" %>
+        </div> 
+        
+
+        <div class="form-section">
+            <%= form.label :password_confirmation, "Confirm Password:" %>
+            <%= form.password_field :password_confirmation, placeholder: "password" %>
+        </div>
+
+        <%= form.submit "Sign Up", class: "sign-up-button" %>
+    <% end %>
+</div>

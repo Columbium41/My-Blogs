@@ -6,10 +6,16 @@ Rails.application.routes.draw do
   get "/about", to: "about#index"
   
   get "/sign_up", to: "registrations#new"
-  post "/sign_up", to: "registrations#create"
+  post "/sign_up", to: "registrations#create", as: :create_account
 
   get "/sign_in", to: "sessions#new"
-  post "/sign_in", to: "sessions#create"
+  post "/sign_in", to: "sessions#create", as: :sign_into_account
 
-  delete "logout", to: "sessions#destroy"
+  delete "/logout", to: "sessions#destroy"
+
+  get "/password", to: "passwords#edit", as: :edit_password
+  patch "/password", to: "passwords#update"
+
+  get "/password/reset", to: "passwords_reset#new", as: :forgot_password
+  post "/password/reset", to: "passwords_reset#create"
 end

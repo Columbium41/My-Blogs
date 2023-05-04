@@ -1,0 +1,17 @@
+<div>
+    <h1 class="text-center">Change Password</h1>
+
+    <%= form_with model: Current.user, url: edit_password_path, class: "account_form" do |form| %>
+        <div class="form-section">
+            <%= form.label :password, "Password:" %>
+            <%= form.password_field :password, placeholder: "password" %>
+        </div> 
+        
+        <div class="form-section">
+            <%= form.label :password_confirmation, "Confirm Password:" %>
+            <%= form.password_field :password_confirmation, placeholder: "password" %>
+        </div>
+
+        <%= form.submit "Update Password", class: "sign-up-button" %>
+    <% end %>
+</div>

@@ -20,6 +20,7 @@ Scheduled Tweets is a tutorial series by [GoRails](https://gorails.com/) intende
 - Basics of sign-in/sign-out controllers
 - How to use session cookies to retrieve prevous login sessions
 - Handling form errors
+- Updating/Changing user passwords with patch requests
 
 ## Installation
 TODO: Add installation steps

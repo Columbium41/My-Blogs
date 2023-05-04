@@ -24,8 +24,7 @@
     margin-bottom: 2ch;
 }
 
-.sign-up-button,
-.sign-in-button {
+.submit-form {
     display: block;
     margin: 0 auto;
     width: unset;
@@ -38,8 +37,7 @@
     transition: filter 0.3s;
 }
 
-.sign-up-button:hover,
-.sign-in-button:hover {
+.submit-form:hover {
     cursor: pointer;
     filter: brightness(85%);
 }

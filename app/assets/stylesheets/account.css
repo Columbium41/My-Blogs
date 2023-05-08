@@ -14,6 +14,9 @@
 .delete {
     background: #ed1111;
 }
+.update-password {
+    background: #3e8cf0;
+}
 
 .manage-account-container {
     width: 60%;

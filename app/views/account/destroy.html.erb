@@ -1,0 +1,17 @@
+<div>
+    <h1 class="text-center">Delete Account</h1>
+
+    <%= form_with model: @user, url: delete_account_path, method: :delete, class: "account_form" do |form| %>
+        <div class="form-section">
+            <%= form.label :password, "Enter Password:" %>
+            <%= form.password_field :password, placeholder: "password" %>
+        </div>
+
+        <div class="form-section">
+            <%= form.label :password_confirmation, "Confirm Password:" %>
+            <%= form.password_field :password_confirmation, placeholder: "password" %>
+        </div>
+
+        <%= form.submit "Delete Account", class: "submit-form form-alert" %>
+    <% end %>
+</div>

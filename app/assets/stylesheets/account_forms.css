@@ -41,3 +41,7 @@
     cursor: pointer;
     filter: brightness(85%);
 }
+
+.form-alert {
+    background: #c70216 !important;
+}

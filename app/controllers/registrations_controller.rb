@@ -27,9 +27,6 @@ class RegistrationsController < ApplicationController
         end
     end
 
-    def destroy 
-    end
-
     private
 
     def user_params 

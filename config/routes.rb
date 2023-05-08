@@ -4,12 +4,9 @@ Rails.application.routes.draw do
   root to: "main#index"
   
   get "/about", to: "about#index"
-
-  get "/account", to: "account#index"
   
   get "/sign_up", to: "registrations#new"
   post "/sign_up", to: "registrations#create", as: :create_account
-  delete "/sign_up", to: "registrations#destroy", as: :delete_account
 
   get "/sign_in", to: "sessions#new"
   post "/sign_in", to: "sessions#create", as: :sign_into_account
@@ -23,4 +20,8 @@ Rails.application.routes.draw do
   post "/password/reset", to: "passwords_reset#create"
   get "/password/reset/edit", to: "passwords_reset#edit"
   patch "/password/reset/edit", to: "passwords_reset#update"
+
+  get "/account", to: "account#index"
+  get "/delete", to: "account#destroy"
+  delete "/account", to: "account#delete", as: :delete_account
 end

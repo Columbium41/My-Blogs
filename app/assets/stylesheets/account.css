@@ -1,0 +1,26 @@
+.account-button {
+    font-size: inherit;
+    padding: 0.8ch 1.2ch;
+    border: none;
+    border-radius: 5px;
+}
+.account-button:hover {
+    cursor: pointer;
+}
+
+.logout {
+    background: #d49100;
+}
+.delete {
+    background: #ed1111;
+}
+
+.manage-account-container {
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}

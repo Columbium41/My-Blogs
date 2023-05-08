@@ -22,14 +22,3 @@
 .nav-link:hover {
     color: rgb(0, 80, 184);
 }
-
-.logout-button {
-    font-size: inherit;
-    padding: 0.8ch 1.2ch;
-    background: #ed1111;
-    border: none;
-    border-radius: 5px;
-}
-.logout-button:hover {
-    cursor: pointer;
-}

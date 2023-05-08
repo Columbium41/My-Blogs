@@ -4,9 +4,12 @@ Rails.application.routes.draw do
   root to: "main#index"
   
   get "/about", to: "about#index"
+
+  get "/account", to: "account#index"
   
   get "/sign_up", to: "registrations#new"
   post "/sign_up", to: "registrations#create", as: :create_account
+  delete "/sign_up", to: "registrations#destroy", as: :delete_account
 
   get "/sign_in", to: "sessions#new"
   post "/sign_in", to: "sessions#create", as: :sign_into_account

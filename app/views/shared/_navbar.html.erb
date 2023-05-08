@@ -8,8 +8,7 @@
             <li><%= link_to "Register", sign_up_path, class: "nav-link" %></li>
             <li><%= link_to "Sign In", sign_in_path, class: "nav-link" %></li>
         <% else %>
-            <p>Signed in as: <%= link_to Current.user.email, edit_password_path %></p>
-            <%= button_to "Logout", logout_path, method: :delete, class: "logout-button" %>
+            <p>Signed in as: <%= link_to Current.user.email, account_path %></p>
         <% end %>
     </ul>
 </nav>

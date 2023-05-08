@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_02_202018) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_08_200617) do
+  create_table "blogs", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "body", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "users_id"
+    t.index ["users_id"], name: "index_blogs_on_users_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "password_digest"
@@ -18,4 +27,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_02_202018) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "blogs", "users", column: "users_id"
 end

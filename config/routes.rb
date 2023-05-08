@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   
   get "/about", to: "about#index"
   
+
+  # Account Routes
   get "/sign_up", to: "registrations#new"
   post "/sign_up", to: "registrations#create", as: :create_account
 
@@ -24,4 +26,10 @@ Rails.application.routes.draw do
   get "/account", to: "account#index"
   get "/delete", to: "account#destroy"
   delete "/account", to: "account#delete", as: :delete_account
+
+
+  # Blog Routes
+  get "/blogs", to: "blogs#index"
+  get "/blogs/:id", to: "blogs#show", as: :blog
+
 end

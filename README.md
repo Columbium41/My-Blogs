@@ -22,6 +22,7 @@ My Blogs is a Rails mini-project that follows multiple tutorial series by [GoRai
 - How to use session cookies to retrieve prevous login sessions
 - Handling form errors
 - Updating/Changing user passwords with patch requests
+- Basics of database migrations and model associations
 
 ## What's Next
 - Add a way for users to delete their accounts

@@ -38,6 +38,7 @@
     border: none;
 }
 .submit-form:hover {
+    filter: brightness(85%);
     cursor: pointer;
 }
 

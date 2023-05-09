@@ -1,6 +1,6 @@
 <div class="blog">
     <%= link_to blog_path(blog.id), class: "blog-link" do %>
         <p class="blog-title"><%= blog.title %></p>
-        <p>Blog Author</p>
+        <p><%= blog.user.name %></p>
     <% end %>
 </div>

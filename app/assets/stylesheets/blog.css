@@ -32,8 +32,17 @@
     margin-bottom: 0.4ch;
 }
 
+.blog-show {
+    width: 80%;
+    margin: 0 auto;
+}
 .blog-show .blog-title {
-    margin-bottom: 1ch !important; 
+    margin-bottom: 0 !important; 
+    text-indent: 1rem;
+}
+.blog-author {
+    font-style: italic;
+    margin: 2ch 0;
 }
 .blog-body {
     text-indent: 2rem;

@@ -3,8 +3,14 @@
 
     <% if Current.user %>
         <div class="user-blogs">
-            <h3 class="text-center">Your Blogs</h3>
             <%= button_to "New Blog", new_blog_path, method: :get, class: "create-blog button-dark" %>
+            
+            <div class="blogs-container">
+                <h2 class="text-center">Your Blogs</h2>
+                <% @user_blogs.each do |blog| %>
+                    <%= render partial: "shared/blog_preview", :locals => {blog: blog} %>
+                <% end %>
+            </div>
         </div>
     <% end %>
 </div>

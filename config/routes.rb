@@ -31,5 +31,7 @@ Rails.application.routes.draw do
   # Blog Routes
   get "/blogs", to: "blogs#index"
   get "/blogs/:id", to: "blogs#show", as: :blog
+  get "/new_blog/", to: "blogs#new"
+  post "/blogs", to: "blogs#create", as: :create_blog
 
 end

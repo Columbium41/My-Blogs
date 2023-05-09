@@ -2,7 +2,7 @@
     <% if !Current.user %>
         <h1 class="text-center">Sign Up</h1>
 
-        <%= form_with model: @user, url: sign_up_path, class: "account_form" do |form| %>
+        <%= form_with model: @user, url: sign_up_path, class: "form" do |form| %>
             <div class="form-section">
                 <%= form.label :email, "Email:" %>
                 <%= form.text_field :email, placeholder: "johndoe@example.com" %>

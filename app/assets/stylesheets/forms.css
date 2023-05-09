@@ -1,22 +1,23 @@
-.account_form {
+.form {
     font-size: 1.1rem;
     margin: 4ch auto;
     width: 40%;
     min-width: 325px;
 }
 
-.account_form input:not(input[type="submit"]) {
+.form input:not(input[type="submit"]),
+.form textarea {
     display: block;
     margin-top: 0.3ch;
     font-size: inherit;
     width: 100%;
     padding: 0.4ch 0;
-    text-indent: 0.3rem;
+    padding-left: 0.3rem;
     border: 1px solid gray;
     border-radius: 5px;
 }
 
-.account_form input:not(input[type="submit"]):focus {
+.form input:not(input[type="submit"]):focus {
     outline: 2px solid #a8d8ff;
 }
 
@@ -33,13 +34,11 @@
     background: #2149d9;
     color: rgba(255, 255, 255, 0.87);
     border-radius: 5px;
-    border: none;
     transition: filter 0.3s;
+    border: none;
 }
-
 .submit-form:hover {
     cursor: pointer;
-    filter: brightness(85%);
 }
 
 .form-alert {
@@ -49,4 +48,8 @@
 .forgot-password {
     display: block;
     margin-top: 0.5ch;
+}
+
+.blog-form {
+    width: 60% !important;
 }

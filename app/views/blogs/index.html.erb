@@ -1,14 +1,9 @@
 <div class="blogs">
-    <h1 class="text-center">Blogs</h1>
+    <h1 class="text-center">All Blogs</h1>
 
     <div class="blogs-container">
         <% @blogs.each do |blog| %>
-                <div class="blog">
-                    <%= link_to blog_path(blog.id), class: "blog-link" do %>
-                        <p class="blog-title"><%= blog.title %></p>
-                        <p>Blog Author</p>
-                    <% end %>
-                </div>
+            <%= render partial: "shared/blog_preview", :locals => {blog: blog} %>
         <% end %>
     </div>
 </div>

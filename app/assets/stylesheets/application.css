@@ -56,3 +56,20 @@ h6 {
 .text-right {
     text-align: right;
 }
+
+button {
+    font-size: inherit;
+    padding: 0.8ch 1.2ch;
+    border: none;
+    border-radius: 5px;
+    transition: filter 0.3s;
+}
+button:hover {
+    cursor: pointer;
+}
+.button-dark:hover {
+    filter: brightness(85%);
+}
+.button-light:hover {
+    filter: brightness(110%);
+}

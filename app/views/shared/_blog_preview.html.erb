@@ -6,7 +6,7 @@
         </section>
         <% if Current.user && Current.user.id == blog.user.id %>
             <section class="blog-buttons">
-                <%= button_to image_tag('update.png'), "", class: "blog-action-icon update-blog" %>
+                <%= button_to image_tag('update.png'), update_blog_form_path(blog.id), method: :get, class: "blog-action-icon update-blog" %>
                 <%= button_to image_tag('bin.png'), delete_blog_path(blog.id), method: :delete, class: "blog-action-icon delete-blog" %>
             </section>
         <% end %>

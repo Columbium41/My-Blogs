@@ -36,5 +36,7 @@ Rails.application.routes.draw do
   get "/new_blog/", to: "blogs#new"
   post "/blogs", to: "blogs#create", as: :create_blog
   delete "/blogs/delete/:id", to: "blogs#destroy", as: :delete_blog
+  get "/blogs/:id/edit", to: "blogs#edit", as: :update_blog_form
+  patch "/blogs/:id", to: "blogs#update", as: :update_blog
 
 end

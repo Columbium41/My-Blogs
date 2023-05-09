@@ -44,7 +44,32 @@ class BlogsController < ApplicationController
             blog.destroy();
             redirect_to root_path, notice: "Successfully deleted blog"
         else
-            redirect_to root_path, notice: "You do not have permission to delete this blog"
+            redirect_to root_path, alert: "You do not have permission to delete this blog"
+
+        end
+    end
+
+    def edit
+        @blog = Blog.find(params[:id])
+    end
+
+    def update
+        blog = Blog.find(params[:id])
+        user_form_params = form_params
+
+        if blog.update(user_form_params)
+            redirect_to root_path, notice: "Successfully updated blog"
+        else
+            error_msg = "Blog Update Failed"
+
+            if blog.errors.any?
+                blog.errors.full_messages.each do |message|
+                    error_msg += "<br>#{message}"
+                end
+            end
+
+            flash[:alert] = error_msg.html_safe
+            render :edit
 
         end
     end

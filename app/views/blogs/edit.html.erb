@@ -1,0 +1,17 @@
+<div>
+    <h1 class="text-center">Edit Blog</h1>
+
+    <%= form_with model: @blog, url: update_blog_path(@blog.id), class: "form blog-form" do |form| %>
+        <div class="form-section">
+            <%= form.label :title, "Blog Title:" %>
+            <%= form.text_field :title %>
+        </div>
+
+        <div class="form-section">
+            <%= form.label :body, "Blog Content:" %>
+            <%= form.text_area :body, size: "70x7" %>
+        </div>
+
+        <%= form.submit "Create Blog", class: "submit-form button-dark" %>
+    <% end %>
+</div>

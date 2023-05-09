@@ -7,13 +7,15 @@ Rails.application.routes.draw do
   
 
   # Account Routes
-  get "/sign_up", to: "registrations#new"
-  post "/sign_up", to: "registrations#create", as: :create_account
+  
+  # get "/sign_up", to: "registrations#new"
+  # post "/sign_up", to: "registrations#create", as: :create_account
+  resources :registrations, only: [:new, :create]
 
-  get "/sign_in", to: "sessions#new"
-  post "/sign_in", to: "sessions#create", as: :sign_into_account
-
+  # get "/sign_in", to: "sessions#new"
+  # post "/sign_in", to: "sessions#create", as: :sign_into_account
   delete "/logout", to: "sessions#destroy"
+  resources :sessions, only: [:new, :create]
 
   get "/password", to: "passwords#edit", as: :edit_password
   patch "/password", to: "passwords#update"

@@ -3,12 +3,17 @@
 
     <%= form_with model: Current.user, url: edit_password_path, class: "account_form" do |form| %>
         <div class="form-section">
-            <%= form.label :password, "Password:" %>
+            <%= form.label :old_password, "Old Password:" %>
+            <%= form.password_field :old_password, placeholder: "password" %>
+        </div>
+
+        <div class="form-section">
+            <%= form.label :password, "New Password:" %>
             <%= form.password_field :password, placeholder: "password" %>
         </div> 
         
         <div class="form-section">
-            <%= form.label :password_confirmation, "Confirm Password:" %>
+            <%= form.label :password_confirmation, "Confirm New Password:" %>
             <%= form.password_field :password_confirmation, placeholder: "password" %>
         </div>
 

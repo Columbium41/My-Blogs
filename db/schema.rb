@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_08_200617) do
     t.text "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "users_id"
+    t.integer "users_id", null: false
     t.index ["users_id"], name: "index_blogs_on_users_id"
   end
 

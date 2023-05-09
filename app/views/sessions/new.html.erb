@@ -11,7 +11,7 @@
             <div class="form-section">
                 <%= form.label :password, "Password:" %>
                 <%= form.password_field :password, placeholder: "password" %>
-                <%= link_to "Forgot your password?", forgot_password_path %>
+                <%= link_to "Forgot your password?", forgot_password_path, class: "forgot-password" %>
             </div> 
 
             <%= form.submit "Sign In", class: "submit-form" %>

@@ -10,7 +10,7 @@ class PasswordsController < ApplicationController
             redirect_to root_path, notice: "Password successfully updated"
 
         else
-            error_msg = "Sign Up Failed"
+            error_msg = "Password Change Failed"
 
             if Current.user.errors.any?
                 Current.user.errors.full_messages.each do |message|

@@ -9,10 +9,14 @@
             </div>
 
             <div class="form-section">
+                <%= form.label :name, "Full Name:" %>
+                <%= form.text_field :name, placeholder: "John Doe" %>
+            </div>
+
+            <div class="form-section">
                 <%= form.label :password, "Password:" %>
                 <%= form.password_field :password, placeholder: "password" %>
             </div> 
-            
 
             <div class="form-section">
                 <%= form.label :password_confirmation, "Confirm Password:" %>

@@ -31,6 +31,6 @@ class RegistrationsController < ApplicationController
 
     def user_params 
         # require user params and only permit email, password, and password confirmation
-        params.require(:user).permit(:email, :password, :password_confirmation)
+        params.require(:user).permit(:email, :name, :password, :password_confirmation)
     end
 end

@@ -19,11 +19,14 @@
     display: block;
     color: inherit;
     text-decoration: none;
-    padding: 1ch 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-.blog-link:hover {
-    text-decoration: underline;
-    text-decoration-color: #030cab;
+
+.blog section {
+    padding: 1ch 10px;
 }
 
 .blog-title {
@@ -46,4 +49,30 @@
 }
 .blog-body {
     text-indent: 2rem;
+}
+
+.blog-action-icon {
+    z-index: 2;
+    transition: filter 0.3s;
+}
+.blog-action-icon:hover {
+    filter: brightness(85%);
+}
+.blog-action-icon img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.delete-blog {
+    background: #ed1111;
+}
+.update-blog {
+    background: #3e8cf0;
+}
+
+.blog-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }

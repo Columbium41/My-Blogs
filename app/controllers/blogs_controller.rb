@@ -37,6 +37,18 @@ class BlogsController < ApplicationController
         end
     end
 
+    def destroy
+        blog = Blog.find(params[:id])
+
+        if Current.user.id == blog.user.id
+            blog.destroy();
+            redirect_to root_path, notice: "Successfully deleted blog"
+        else
+            redirect_to root_path, notice: "You do not have permission to delete this blog"
+
+        end
+    end
+
     private
 
     def form_params

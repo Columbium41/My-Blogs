@@ -1,6 +1,14 @@
 <div class="blog">
     <%= link_to blog_path(blog.id), class: "blog-link" do %>
-        <p class="blog-title"><%= blog.title %></p>
-        <p><%= blog.user.name %></p>
+        <section>
+                <p class="blog-title"><%= blog.title %></p>
+                <p><%= blog.user.name %></p>
+        </section>
+        <% if Current.user && Current.user.id == blog.user.id %>
+            <section class="blog-buttons">
+                <%= button_to image_tag('update.png'), "", class: "blog-action-icon update-blog" %>
+                <%= button_to image_tag('bin.png'), delete_blog_path(blog.id), method: :delete, class: "blog-action-icon delete-blog" %>
+            </section>
+        <% end %>
     <% end %>
 </div>

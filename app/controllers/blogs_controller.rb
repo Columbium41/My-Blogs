@@ -51,6 +51,10 @@ class BlogsController < ApplicationController
 
     def edit
         @blog = Blog.find(params[:id])
+
+        if !Current.user || Current.user.id != @blog.user.id
+            redirect_to root_path, alert: "You do not have permission to edit this blog"
+        end
     end
 
     def update
